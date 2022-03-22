@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem ajustável</title>
+    <link rel="shortcut icon" href="Icone.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>
+        Imagem Flexível
+    </h1>
+    <hr>
+
+    <h2>
+        Como funciona?
+    </h2>
+
+    <p>
+        Existem varios tamanhos de telas que irão acessar os sites criados, como computadores, televisões, celulares, etc. Para não termos problemas com a resolução de uma imagem colocada no site, usamos o comando &lt;picture&gt; para adicionar algumas imagens que serão alternadas de acordo com a resolução do navegador aberto.
+    </p>
+
+    <h2>
+        Como usar?
+    </h2>
+
+    <p>
+        Usamos inicialmente o comando &lt;picture&gt; e dentro iremos adicionar as imagens que serão alternadas. Veja o exemplo:
+    </p>
+
+    <code>
+        <pre>
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png"&gt;
+        &lt;source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png"&gt;
+        &lt;img src="imagens/paisagem-g.png" alt="Imagem Dinâmica"&gt;
+    &lt;/picture&gt;
+        </pre>
+    </code>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem Dinâmica">
+    </picture>
+
+    <p>
+        Dentro do comando &lt;source&gt; usamos também:
+    </p>
+
+    <dl>
+        <dt>media</dt>
+        <dd>Usamos com o tamanho máximo que a imagem do source irá ficar;</dd>
+
+        <dt>srcset</dt>
+        <dd>Usamos com o endereço em que a imagem está armazenada;</dd>
+
+        <dt>type</dt>
+        <dd>Usamos com o tipo de imagem que será utilizada (PNG/JPEG).</dd>
+    </dl>
+
+    <h1>Inserindo audio</h1>
+    <hr>
+
+    <h2>
+        Aonde baixar?
+    </h2>
+
+    <p>
+        Podemos baixar conteudo em audio pelo Youtube, lá podemos filtrar e encontrar musicas sem direitos autorais.
+    </p>
+
+    <h2>
+        Como adicionar ao site?
+    </h2>
+
+    <p>
+        Podemos adicionar aa nossa página da seguinte forma:
+    </p>
+
+    <code>
+        <pre>
+    &lt;audio src="midia/happy-mistake.mp3" controls&gt;&lt;/audio&gt;
+        </pre>
+    </code>
+
+    <audio src="midia/happy-mistake.mp3" controls></audio>
+
+    <h2>Problemas de compatibilidade</h2>
+
+    <p>
+        Desta forma apresentada a cima, embora extremamente simples exitem alguns navegadores que apresentam imcompatibilidade com alguns formatos de áudio, por conta disso usamos uma outra forma para conseguir adicionar vários formatos de áudio:
+    </p>
+
+    <code>
+        <pre>
+    &lt;audio preload="metadata" controls&gt;
+        &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt;
+        &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt;
+        &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt;
+    &lt;/audio&gt;
+        </pre>
+    </code>
+
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    </audio>
+
+    <h2>Parâmetros para a tag &lt;audio&gt;</h2>
+
+    <ul>
+        <dt>controls</dt>
+        <dd>Mostra o painel de controle do audio dentro da página</dd>
+        <dt>preload</dt>
+        <ul>
+            <dt>auto</dt>
+            <dd>Carrega completamente o audio e todas as suas informações no site, porém pode deixar o site lento;</dd>
+            <dt>metadata</dt>
+            <dd>Carrega apenas os dados do arquivo como nome, tempo de faixa de audio, data, etc;</dd>
+            <dt>none</dt>
+            <dd>Não carrega nada do audio ao abrir o site.</dd>
+        </ul>
+    </ul>
+
+    <a href="../../index.html"><img src="../../arquivos/imagem/voltarP.png" alt="Botão voltar"></a>
+
+</body>
+</html>

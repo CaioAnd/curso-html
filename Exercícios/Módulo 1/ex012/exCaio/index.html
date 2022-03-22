@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="shortcut icon" href="Icone.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>
+        Inserindo vídeo
+    </h1>
+    <hr>
+
+    <h2>
+        Aonde baixar?
+    </h2>
+
+    <p>
+        Podemos baixar vídeos com direitos autorais liberados no site Pexels. Para adicionar o site, usamos a seguinte tag:
+    </p>
+
+    <code>
+        <pre>
+    &lt;video src="midia/Meu-Video.m4v" width="500" controls&gt;&lt;/video&gt;
+        </pre>
+    </code>
+
+    <video src="midia/Meu-Video.m4v" width="500" controls></video>
+
+    <h2>
+        Problemas de compatibilidade
+    </h2>
+
+    <p>
+        Da mesma forma que o audio,  esta é a forma mais simples, porém exitem alguns navegadores que apresentam imcompatibilidade com alguns formatos de vídeo, por conta disso usamos uma outra forma para conseguir adicionar vários formatos de vídeo:
+    </p>
+
+    <code>
+        <pre>
+    &lt;video width="500" controls&gt;
+        &lt;source src="midia/Meu-Video.m4v" type="video/mp4"&gt;
+        &lt;source src="midia/Meu-Video.webm" type="video/webm"&gt;
+        &lt;p&gt;Seu navegador não tem compatibilidade com repução de vídeo&lt;/p&gt;
+    &lt;/video&gt;
+        </pre>
+    </code>
+
+    <video width="500" controls>
+        <source src="midia/Meu-Video.m4v" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com repução de vídeo</p>
+    </video>
+
+    <h2>
+        Parâmetros para a tag &lt;video&gt;
+    </h2>
+
+    <ul>
+        <dt><strong>width</strong></dt>
+        <dd>Tamanho do vídeo na página</dd>
+
+        <dt><strong>poster</strong></dt>
+        <dd>Imagem de capa para vídeo</dd>
+    </ul>
+
+    <a href="../../index.html"><img src="../../arquivos/imagem/voltarP.png" alt="Botão voltar"></a>
+    
+</body>
+</html>

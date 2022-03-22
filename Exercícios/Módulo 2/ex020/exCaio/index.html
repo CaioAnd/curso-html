@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Trabalhando com Pseudo-classes</h1>
+    <hr>
+
+    <main>
+        <h2 id="utilidade">Qual sua utilidade?</h2>
+
+        <p>
+            Pseudo-classe trabalha com o estado que um elemento está (Vazio, pressionada, marcado, etc)
+        </p>
+
+        <div>
+            coloque o mouse aqui
+            <p>
+                podemos adicionar textos escondidos com as pseudo-classes, por exemplo.
+            </p>
+        </div>
+
+
+
+
+
+        <h2 id="aplicar">Como aplicar no nosso código?</h2>
+
+        <p>Vamos mostrar como exemplo o div usado anteriormente. Primeiro devemos criar o div com um &lt;p&gt; veja a baixo:</p>
+
+        <pre>
+            <code>
+    &lt;div&gt;
+        coloque o mouse aqui
+        &lt;p&gt;
+            podemos adicionar textos escondidos com as pseudo-classes, por exemplo.
+        &lt;/p&gt;
+    &lt;/div&gt;
+            </code>
+        </pre>
+
+        <p>Agora vamos alterar exclusivamente os paragrafos dentro apenas do div, para isso usamos "div > p" e neste style vamos usar também o display: none; que faz com que o texto não seja mostrado. Veja melhor no código a baixo:</p>
+
+        <pre>
+            <code>
+    div > p {
+        display: none;
+    }
+            </code>
+        </pre>
+
+        <p>E por ultimo, para mostrarmos o texto apenas quando o mouse estiver em cima da div, usamos nossa pseudo-classe :hover. Vamos colocar div, que será a tag alterada e :hover para criar a função da pseudo-classe. Após isso vamos inserir > p para alterar apenas os paragrafos do div e usar display: block. Veja o código a baixo:</p>
+
+        <pre>
+            <code>
+    div:hover > p {
+        display: block;
+        font-size: 0.9em;
+        color: rgb(184, 47, 47);
+        font-style: italic;
+    }
+            </code>
+        </pre>
+
+        <h2 id="resumo">Resumindo</h2>
+
+        <h3>div <strong>&gt;</strong> p</h3>
+
+        <p>Usado para alterar os paragrafos dentro de um div</p>
+
+        <h3>display: none;</h3>
+
+        <p>Usado para não mostrar texto do conteudo selecionado.</p>
+
+        <h3>display: block;</h3>
+
+        <p>Usado para mostrar texto do conteudo selecionado.</p>
+
+        <h3>:hover</h3>
+
+        <p>Faz com que o style seja aplicado apenas quando o mouse estiver em cima da tag especificada antes</p>
+
+    </main>
+</body>
+</html>

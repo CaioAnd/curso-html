@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('fontes/LeagueGothic-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #84E1AD;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #3DDA83, #195B38);
+    padding: 0px;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 0px;
+    color: white;
+    padding-top: 10px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+}
+
+header > p {
+    text-align: center;
+    color: white;
+}
+
+header > span {
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+header > span:hover {
+    background-color: #589271;
+}
+
+span > a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 12px;
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    margin:auto;
+    padding: 0px 0px 5px 0px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+article {
+    padding: 10px;
+}
+
+article > h1 {
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color: #326D4C;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, #84E5AF, white);
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color: #326D4C;
+    padding: 2px;
+    border: 2px;
+    width: 750px;
+    text-indent: 10px;
+}
+
+article > p {
+    text-indent: 30px;
+}
+
+article > img {
+    text-align: center;
+}
+
+.alinhar {
+    text-align: center;
+}
+
+.video {
+    margin: 0px;
+    background-color: #1A5C38;
+}
+
+.extra {
+    background-color: #C5EBD6;
+    padding: 0px 0px 10px 0px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.extra > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #2FA866;
+    text-indent: 10px;
+    padding: 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px 30px;
+}
+
+.extra > p {
+    padding: 0px 10px;
+}
+
+li > a {
+    color: black;
+}
+
+main > p {
+    text-indent: 30px;
+    padding: 10px;
+}
+
+li:before {
+    content: "\f058"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+
+p > a:after {
+    content: "\f0c1"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+    color: gray;
+}
+
+p > a {
+    color: #326D4C;
+    margin: 0px 30px 0px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p > span {
+    color: #326D4C;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+}
+
+.divisor {
+    float:left;
+    width: 50%;
+}

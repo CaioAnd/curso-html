@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Fontes</h1>
+    <hr>
+
+    <h2>Qual fontes usar?</h2>
+
+    <p>
+        Alguns dispositivos como TVs e celulares não tem suporte para todas as fontes. Uma forma de saber quais fontes são seguras é simplesmente pesquisar no google por "CSS web safe font combinations".
+    </p>
+
+    <h2>Mais de uma fonte selecionada</h2>
+
+    <p>
+        Podemos também adicionar mais de uma fonte a ser usada para caso não ter a primeira, o navegador irá pegar a segunda e se caso também não suportar a segunda, usar alguma fonte genérica semelhante a escolhida. Usamos dessa forma:
+    </p>
+
+    <code>
+        <pre>
+            <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+            </style>
+        </pre>
+    </code>
+
+    <p>Neste exemplo, a fonte "Arial" é a solicitada. Caso o aparelho não ter essa fonte, ele irá utilizar a fonte "Helvetica". Se caso o dispositivo não ter nenhuma das duas, o navegador irá colocar uma outra fonte da mesma categoria, que no caso seria "sans-serif", uma fonte não serifada.</p>
+    
+</body>
+</html>

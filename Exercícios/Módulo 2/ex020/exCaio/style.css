@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, #e7cfcf, #f49292, #e25e5e);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1#titulo {
+    text-align: center;
+    background-color: white;
+    color: #680707;
+    width: 610px;
+    margin: auto;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
+
+h2#utilidade {
+    color: #b13b3b;
+}
+
+h2#aplicar {
+    color: #e45252;
+}
+
+h2#resumo {
+    color: #f75c5c;
+}
+
+div {
+    color: red;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    font-size: 0.9em;
+    color: rgb(184, 47, 47);
+    font-style: italic;
+}

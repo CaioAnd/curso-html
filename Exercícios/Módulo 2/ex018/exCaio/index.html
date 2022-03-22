@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@bold&display=swap');
+        body{
+            background-image: linear-gradient(120deg, #DB5A42, #E3A587, #FFD275);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.712);
+        }
+        h1{
+            color: #A57F60;
+        }
+        h2{
+            font-family: 'Rubik', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #be9674;
+        }
+
+        p, dl {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        
+        <h1>Fontes e textos.</h1>
+        <hr>
+        <h2>Começando do começo.</h2>
+        <p>As fontes, assim como as cores tem que apresentar uma armonia, respeitando algumas regras os visitantes do seu site vão conseguir identificar o significado das palavras mais facilmente e com as fontes certas, também irão ter mais facilidade para fazer leitura dos textos da página.</p>
+        <h2>A composição da fonte e conceitos</h2>
+        <p>Inicialmente vamos falar sobre glifos. Um glifo é um caractere (Letra, número ou simbolo) dentro de uma fonte e, sucessivamente para fazermos uma fonte necessitamos de um conjuto de glifos. Também temos a família tipográfica, que é um conjunto de glifos de diferente família (light, normal, seminegrito, negrito e extranegrito), nem todas as fontes tem mais de uma família tipográfica.</p>
+        <h2>Categorias de fontes</h2>
+        <p>Também podemos classificar as fontes em categorias, sendo que cada categoria tem sua utilidade própria em um site, veja as categorias:</p>
+        <dl>
+            <dt>Serifadas:</dt>
+            <dd>Fontes que <strong>contém</strong> serifa*</dd>
+            <dt>Sans-serif</dt>
+            <dd>Fontes que <strong>não</strong> contém serifa</dd>
+            <dt>Monoespaçadas</dt>
+            <dd>Fonte com todos os glifos tendo o mesmo espaço na página, mesmo número de pixels.</dd>
+            <dt>Display</dt>
+            <dd>Fontes especiais ou comemorativas. Fontes como de filmes, festas, etc.</dd>
+        </dl>
+        <p>*Serifa: Cantos das letras, é usado para fazer uma linha imaginaria no <a href="https://www.google.com/search?q=ascendente+e+descendente+fontes&rlz=1C1ISCS_pt-PTBR991BR991&sxsrf=APq-WBv1nORUg8UgCmXAlG9FNqMw7GfkNg%3A1645793802095&ei=CtIYYvi-Be6s5OUP7LyZkA0&ved=0ahUKEwj468nX85r2AhVuFrkGHWxeBtIQ4dUDCA4&uact=5&oq=ascendente+e+descendente+fontes&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABOgcIABBHELADOgcIABCwAxBDOgUIABCABDoECAAQQzoGCAAQFhAeOgQIABANSgQIQRgASgQIRhgAUKsGWLASYMAUaAFwAXgAgAGvAogB9geSAQcwLjYuMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz" target="_blank" rel="external">ascendente e descendente</a>   de uma fonte. Facilita a leitura principalmente em papel.</p>
+        <h2>Aonde encontrar fontes</h2>
+        <p>Para vermos as possibilidades de fontes para nosso site, podemos acessar o site <a href="https://fonts.google.com" target="_blank" rel="external">Google Fonts</a>, que nos mostra algumas possibilidades dentro de categorias de fontes. Lá também conseguimos importar as fontes, para adicionarmos no nosso site sem ter que baixa-las.</p>
+        <h2>Adicionando a fonte no site</h2>
+        <p>Para colocarmos fontes que já estão no nosso navegador no nosso site, usamos o seguinte código:</p>
+        <code>
+            <pre>
+    &lt;style&gt;
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    &lt;/style&gt;
+            </pre>
+        </code>
+        <p>O recomendado é que usemos sempre três links de fontes sendo consecutivamente o primeiro a fonte principal escolhida, a segunda uma fonte genérica da classe da fonte principal e por ultimo a classe da fonte principal. Desta forma, se o site não carregar a fonte desejada ele irá usar a fonte secundária que é mais sucetível para a maioria dos navegadores e caso a segunda fonte também vier a falhar, o site irá buscar uma outra fonte da mesma classe e irá colocar no texto selecionado.</p>
+        <h2>Adicionando fontes do Google Fonts.</h2>
+        <p>Para adicionarmos uma fonte do site do Google Fonts, usamos o seguinte código:</p>
+        <code>
+            <pre>
+    &lt;style&gt;
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&di
+        splay=swap');
+        h1{
+            font-family: 'Kaushan', Arial, Helvetica, sans-serif;
+        }
+    &lt;/style&gt;
+            </pre>
+        </code>
+        <p>Lembrando que esse @import é pego no próprio Google Fonts, basta apenas colar dentro do nosso &lt;style&gt;</p>
+        <h2>alguns comandos para fontes</h2>
+        <p>Para deixar a fonte mais grossa ou mais fina, para trabalhar com o <strong>peso</strong> da fonte, usamos o seguinte comando para colocar em negrito:</p>
+        <code>
+            <pre>
+    font-weight: bolder;
+            </pre>
+        </code>
+        <p>Para escolher o <strong>tamanho</strong> da nossa fonte, usamos o seguinte comando:</p>
+        <code>
+            <pre>
+    font-size: 1em;
+            </pre>
+        </code>
+        <p>**Lembrando: 1em representa uma vez o tamanho padrão da fonte no site, ou seja, 1em = 16px. Também pode ser colocado no comando 16px, ambas as formas estão corretas.</p>
+        <p>Para adicionarmos o estilo itálico na nossa fonte, usamos o seguinte comando:</p>
+        <code>
+            <pre>
+    font-style: italic;
+            </pre>
+        </code>
+
+    </main>
+    
+</body>
+</html>

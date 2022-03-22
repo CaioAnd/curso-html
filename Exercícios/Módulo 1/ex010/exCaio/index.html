@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+    <link rel="shortcut icon" href="Icone.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Trabalhando com links</h1>
+    <hr>
+    
+    <h2>
+        Usando links Externos
+    </h2>
+
+
+    <p>
+        Usamos o &lt;a&gt; para adicionar um link no seu site.
+    <p>
+
+    <p>
+        Clique <a href="https://www.corrijame.com.br">aqui</a> para acessar o site Corrija-me.
+    </p>
+
+    <h2>
+        Como abrir em uma nova guia?
+    </h2>
+
+    <p>
+        Para abrir o link desejado em outro site, adicionamos target="_blank" dentro do nosso &lt;a&gt; para abrir em outra guia. Também adicionamos rel="external" para ser comunicado ao navegador que esse link foi adicionado e não tem relação com a página principal.
+    </p>
+
+    <p>
+        Clique <a href="https://www.corrijame.com.br" target="_blank" rel="external">aqui</a> para acessar o site Corrija-me em outra guia.
+    </p>
+
+    <h2>
+        Links interno
+    </h2>
+
+    <p>
+       Com o mesmo comando &lt;a&gt; podemos adicionar novas páginas no nosso site, caso estejam na mesma pasta que o index ou dentro de outras sub-pastas.
+    </p>
+
+    <p>
+        Para adicionar um link, digitamos o seguinte:
+    </p>
+
+    <code>
+        &lt;a href="pag002" rel="next"&gt; exemplo &lt;/a&gt;
+    </code>
+
+    <p>
+        Clique <a href="pag002.html" rel="next">aqui</a> para entrar na segunda página.
+    </p>
+
+    <h2>
+        Para que serve o rel=""?
+    </h2>
+
+    <p>
+        Usamos o rel para o código se comunicar com o site. Dentro pode colocar algumas opções como next, prev, external e nofollow.
+    </p>
+
+    <dl>
+        <dt>rel="next"</dt>
+        <dd>Utilizada para indicar ao navegador que o link se refere a próxima página do site principal;</dd>
+        <dt>rel="prev"</dt>
+        <dd>Semelhante a anterior, é utilizada para indicar ao navegador que o link se refere a uma página anterior do site principal, estamos voltando páginas para trás;</dd>
+        <dt>rel="external"</dt>
+        <dd>Utilizada para indicar ao navegador que site do link adicionado não faz parte do site principal, indica que o site do link seria um outro site externo;</dd>
+        <dt>rel="nofollow"</dt>
+        <dd>Utilizada para links de outros sites, essa rel expecífica faz com que o site principal não interfira no site do link adicionado.</dd>
+    </dl>
+
+    <h2>
+        Links para download
+    </h2>
+
+    <p>
+        Usamos o &lt;a&gt; também para adicionar links para download de arquivos. Veja o exemplo:
+    </p>
+
+    <code>
+        &lt;a href="arquivos/texto.txt"&gt; Clique aqui para baixar &lt;/a&gt;
+    </code>
+
+    <p>
+        Clique <a href="arquivos/texto.txt">aqui</a> para baixar um texto.
+    </p>
+
+    <a href="../../index.html"><img src="../../arquivos/imagem/voltarP.png" alt="Botão voltar"></a>
+
+</body>
+</html>
