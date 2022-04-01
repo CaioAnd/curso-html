@@ -19,6 +19,7 @@ nav {
     background-image: linear-gradient(to top, #0BC6E3, #0bc6e3a2);
     padding: 20px 6px;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 5px black;
 }
 
 nav > a {
@@ -43,10 +44,18 @@ main {
     max-width: 800px;
     margin: auto;
     text-align: justify;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 0px 0px 10px 10px;
 }
 
 p {
     text-indent: 30px;
+}
+
+h1{
+    color: #dcc172;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .videos{
