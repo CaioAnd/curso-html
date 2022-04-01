@@ -3,6 +3,7 @@
 body {
     margin: 0px;
     background-image: linear-gradient(to bottom, #545E75, #304D6D);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -10,7 +11,7 @@ header {
     background-size: cover;
 }
 
-#logo {
+.logo {
     text-align: center;
 }
 
@@ -44,11 +45,15 @@ main {
     text-align: justify;
 }
 
-#videos{
+p {
+    text-indent: 30px;
+}
+
+.videos{
     text-align: center;
 }
 
-#videos > iframe {
+.videos > iframe {
     padding: 5px 5px;
     height: 30vh;
     width: 45%;
@@ -70,4 +75,14 @@ footer > p > a {
 
 footer > p > a:hover{
     text-decoration: underline;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.imagem > img {
+    padding: 5px 5px;
+    height: 30vh;
+    width: 45%;
 }
