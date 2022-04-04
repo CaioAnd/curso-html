@@ -120,6 +120,12 @@ footer > p > a:hover{
         width: 100%;
     }
 
+    .imagem > img {
+        padding: 5px 5px;
+        height: 45vh;
+        width: 100%;
+    }
+
     nav{
         text-align: center;
     }
@@ -139,6 +145,12 @@ footer > p > a:hover{
         width: 45%;
     }
 
+    .imagem > img {
+        padding: 5px 5px;
+        height: 30vh;
+        width: 45%;
+    }
+
 }
 
 @media (max-width: 415px)
@@ -149,6 +161,12 @@ footer > p > a:hover{
     }
 
     .videos > iframe {
+        padding: 5px 5px;
+        height: 25vh;
+        width: 100%;
+    }
+
+    .imagem > img {
         padding: 5px 5px;
         height: 25vh;
         width: 100%;
