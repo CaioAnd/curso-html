@@ -68,6 +68,17 @@ h1{
     width: 45%;
 }
 
+.videos-responsivo{
+    display: none;
+    text-align: center;
+}
+
+.videos-responsivo > iframe {
+    padding: 5px 5px;
+    height: 45vh;
+    width: 100%;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -94,4 +105,53 @@ footer > p > a:hover{
     padding: 5px 5px;
     height: 30vh;
     width: 45%;
+}
+
+.videos{
+    text-align: center;
+}
+
+@media (max-width: 667px)
+{
+    
+    .videos > iframe {
+        padding: 5px 5px;
+        height: 45vh;
+        width: 100%;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    nav > a{
+        padding: 20px 6px;
+    }
+
+}
+
+@media (min-width: 667px)
+{
+    
+    .videos > iframe {
+        padding: 5px 5px;
+        height: 30vh;
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 415px)
+{
+    
+    body{
+        width: 100%;
+    }
+
+    .videos > iframe {
+        padding: 5px 5px;
+        height: 25vh;
+        width: 100%;
+    }
+
 }
