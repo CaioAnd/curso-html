@@ -8,11 +8,6 @@
     <link rel="shortcut icon" href="imagens/lol-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
     <style>
-        article > img{
-            padding: 5px 5px;
-            height: 45vh;
-            width: 100%;
-        }
         h1 {
             text-align: center;
             color: #a59257;
@@ -23,7 +18,35 @@
         }
 
         .campeoes {
-            
+            text-align: center;
+        }
+
+        .campeoes-p > img{
+            padding: 5px;
+            height: 45vh;
+            width: 100%;
+        }
+
+        @media (max-width: 676px)
+        {
+            .campeoes-p {
+                display: block;
+            }
+
+            .campeoes {
+                display: none;
+            }
+        }
+
+        @media (min-width: 676px)
+        {
+            .campeoes-p {
+                display: none;
+            }
+
+            .campeoes {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -50,11 +73,13 @@
         </p>
         <article>
             <h2>Rota superior</h2>
-            <div class="campeoes">
-                <img src="imagens/top/Darius.jpg" alt="Mapa League of Legends">
-                <img src="imagens/top/GP.jpg" alt="Mapa League of Legends">
-                <img src="imagens/top/Irelia.jpg" alt="Mapa League of Legends">
-                <img src="imagens/top/Urgot.jpg" alt="Mapa League of Legends">
+            <div class="campeoes" >
+                <img src="imagens/top/GP.jpg" alt="Personagem jogável">
+                <img src="imagens/top/Darius.jpg" alt="Personagem jogável">
+                <img src="imagens/top/Irelia.jpg" alt="Personagem jogável">
+            </div>
+            <div class="campeoes-p">
+                <img src="imagens/top/img-g.jpg" alt="Personagem jogável">
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
@@ -62,28 +87,56 @@
         </article>
         <article>
             <h2>Selva</h2>
-            <img src="imagens/dragao.jpg" alt="Mapa League of Legends">
+            <div class="campeoes">
+                <img src="imagens/jg/graves.jpg" alt="Mapa League of Legends">
+                <img src="imagens/jg/lee sin.jpg" alt="Mapa League of Legends">
+                <img src="imagens/jg/rengar.jpg" alt="Mapa League of Legends">
+            </div>
+            <div class="campeoes-p">
+                <img src="imagens/jg/img-g.jpg" alt="Personagem jogável">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
         </article>
         <article>
             <h2>Rota meio</h2>
-            <img src="imagens/torres.jpg" alt="Mapa League of Legends">
+            <div class="campeoes">
+                <img src="imagens/mid/lux.jpg" alt="Mapa League of Legends">
+                <img src="imagens/mid/zed.jpg" alt="Mapa League of Legends">
+                <img src="imagens/mid/fizz.jpg" alt="Mapa League of Legends">
+            </div>
+            <div class="campeoes-p">
+                <img src="imagens/mid/img-g.jpg" alt="Personagem jogável">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
         </article>
         <article>
             <h2>Atirador</h2>
-            <img src="imagens/nexus.png" alt="Mapa League of Legends">
+            <div class="campeoes">
+                <img src="imagens/adc/Akshan.jpg" alt="Mapa League of Legends">
+                <img src="imagens/adc/samira.jpg" alt="Mapa League of Legends">
+                <img src="imagens/adc/ashe.jpg" alt="Mapa League of Legends">
+            </div>
+            <div class="campeoes-p">
+                <img src="imagens/adc/img-g.jpg" alt="Personagem jogável">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
         </article>
         <article>
             <h2>Suporte</h2>
-            <img src="imagens/torres.jpg" alt="Mapa League of Legends">
+            <div class="campeoes">
+                <img src="imagens/sup/brand.jpg" alt="Mapa League of Legends">
+                <img src="imagens/sup/blitz.jpg" alt="Mapa League of Legends">
+                <img src="imagens/sup/lulu.jpg" alt="Mapa League of Legends">
+            </div>
+            <div class="campeoes-p">
+                <img src="imagens/sup/img-g.jpg" alt="Personagem jogável">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
