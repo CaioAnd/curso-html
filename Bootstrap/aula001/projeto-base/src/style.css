@@ -13,6 +13,25 @@
     font-family: 'Pacifico', cursive;
 }
 
-.cor-especial {
+.texto-cor-especial {
     color: darkred;
+}
+
+.botao-cor-especial{
+    background-color: darkred!important;
+    color: white!important;
+    border-color: darkred!important;
+}
+
+.botao-cor-especial:hover{
+    background-color: rgb(120, 0, 0)!important;
+}
+
+#navbarNav {
+    text-align: right;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
 }
