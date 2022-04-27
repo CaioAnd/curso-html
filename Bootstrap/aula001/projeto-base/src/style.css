@@ -18,7 +18,7 @@
 }
 
 .texto-cor-especial {
-    color: darkred;
+    color: darkred!important;
 }
 
 .botao-cor-especial{
@@ -29,6 +29,10 @@
 
 .botao-cor-especial:hover{
     background-color: rgb(120, 0, 0)!important;
+}
+
+.borda-cor-especial{
+    border-color: darkred!important;
 }
 
 #navbarNav {
@@ -43,4 +47,13 @@
 .card-posicao-imagem {
     object-fit: cover;
     height: 200px;
+}
+
+.link-perso {
+    text-decoration: none;
+}
+
+.link-perso:hover {
+    text-decoration: underline;
+    color: rgb(217, 216, 216)!important;
 }
