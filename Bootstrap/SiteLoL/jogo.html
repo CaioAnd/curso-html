@@ -16,11 +16,19 @@
         h1 {
           text-align: center;
           color: #a59257;
+          padding: 10px;
         }
         h2 {
           color: #0a92a7;
           font-weight: bolder;
           text-shadow: 1px 1px 1px black;
+          padding: 10px;
+        }
+        p {
+          padding: 10px;
+        }
+        .carrosel {
+          color: white;
         }
     </style>
 </head>
@@ -65,28 +73,56 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
-            <img src="imagens/rotas.webp" alt="Mapa League of Legends">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active img-fluid">
+                  <img src="imagens/top/rota.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carrosel">Rota topo</h2>
+                  </div>
+                </div>
+                <div class="carousel-item img-fluid">
+                  <img src="imagens/jg/rota.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carrosel">Selva</h2>
+                  </div>
+                </div>
+                <div class="carousel-item img-fluid">
+                  <img src="imagens/mid/rota.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carrosel">Rota meio</h2>
+                  </div>
+                </div>
+                <div class="carousel-item img-fluid">
+                  <img src="imagens/adc/rota.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="carrosel">Rota inferior</h2>
+                  </div>
+                </div>
+              </div>
+              </button>
+            </div>
         </article>
         <article>
             <h2>Objetivos</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
-            <img src="imagens/dragao.jpg" alt="Mapa League of Legends">
-        </article>
-        <article>
-            <h2>Torres</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
-            </p>
-            <img src="imagens/torres.jpg" alt="Mapa League of Legends">
+            <img src="imagens/dragao.jpg" class="img-fluid" alt="Mapa League of Legends">
         </article>
         <article>
             <h2>Base e nexus</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum ipsa magni vero est eum exercitationem soluta doloremque fugit recusandae libero. Quasi quaerat amet architecto aspernatur doloribus est cum deleniti quam.
             </p>
-            <img src="imagens/nexus.png" alt="Mapa League of Legends">
+            <img src="imagens/nexus.png" class="img-fluid" alt="Mapa League of Legends">
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi numquam veritatis consectetur iste dolore soluta odio nostrum explicabo laudantium unde? Beatae, est distinctio doloribus tempora culpa error nobis id vitae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim omnis dolore ipsum quam tempora magni, at corrupti? Quas, dolor. Sed id accusamus ratione consectetur, aliquid accusantium ad quos harum nihil.</p>
         </article>
