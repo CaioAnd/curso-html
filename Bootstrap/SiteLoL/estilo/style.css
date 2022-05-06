@@ -35,8 +35,13 @@ main {
     border-radius: 0px 0px 10px 10px;
 } */
 
+h1, h2 {
+    padding: 10px 15px 15px 5px;
+}
+
 p {
     text-indent: 30px;
+    padding: 10px;
 }
 
 h1{
@@ -78,12 +83,6 @@ footer > p > a:hover{
     text-align: center;
 }
 
-/*.card > img{
-    object-fit: cover;
-    object-position: top;
-    height: 500px;
-} */
-
 .card > div > h5{
     color: #dcc172;
     font-weight: bolder;
@@ -96,13 +95,15 @@ footer > p > a:hover{
     color: white!important;
 }
 
-@media (min-width: 667px)
+@media (min-width: 768px)
 {
+
+    .carrosel-img{
+        height: 900px!important;
+    }
     
-    .videos > iframe {
-        padding: 5px 5px;
-        height: 30vh;
-        width: 45%;
+    iframe {
+        height: 60vh;
     }
 
     .imagem > img {
@@ -110,6 +111,7 @@ footer > p > a:hover{
         height: 30vh;
         width: 45%;
     }
+
 
     .menu{
         display: inline;
@@ -121,18 +123,16 @@ footer > p > a:hover{
 
 }
 
-@media (max-width: 667px)
+@media (max-width: 767px)
 {
     
-    .videos > iframe {
-        padding: 5px 5px;
-        height: 45vh;
-        width: 100%;
+    iframe {
+        height: 40vh;
     }
 
     .imagem > img {
         padding: 5px 5px;
-        height: 45vh;
+        height: 30vh;
         width: 100%;
     }
 
@@ -170,7 +170,7 @@ footer > p > a:hover{
 
 }
 
-@media (max-width: 415px)
+@media (max-width: 575px)
 {   
     
     body{
@@ -180,10 +180,8 @@ footer > p > a:hover{
         font-size: 26px;
     }
 
-    .videos > iframe {
-        padding: 5px 5px;
+    iframe {
         height: 25vh;
-        width: 100%;
     }
 
     .imagem > img {
@@ -221,7 +219,7 @@ footer > p > a:hover{
     }
 
     footer{
-        margin: 0px;
+        margin-top: 50px;
     }
 
 }
