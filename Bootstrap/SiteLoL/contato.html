@@ -24,11 +24,18 @@
         em:hover{
             text-decoration: underline;
         }
+
+        .form-button {
+          background-color: #15e0ff!important;
+          border-color: #14d4f1!important;
+          box-shadow: 1px 1px 2px #0a92a7;
+          text-shadow: 1px 1px 1px lightgray;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand text-light fw-bold" href="index.html">League of Legends</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,27 +68,58 @@
         </div>
     </header>
     <main>
-        <h1>
+        <div class="container">
+          <h1>
             Para mais informações
-        </h1>
-        <h2>Nosso canal do Youtube</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quisquam velit non molestias beatae incidunt veniam est esse ratione distinctio natus porro reiciendis, numquam sapiente delectus reprehenderit, facere recusandae. Officiis.
-            <br>
-            Clique aqui para conhecer canal do <a href="https://www.youtube.com/leagueoflegends" target="_blank">Youtube</a>.
-        </p>
-        <h2>Nossa página do Instagram</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tenetur quod voluptatum sit, perferendis dolorum quis quos odio earum recusandae aliquid, necessitatibus suscipit non ratione dolores sapiente. Numquam, beatae quis.
-            <br>
-            Clique aqui para conhecer nossa página do <a href="https://www.instagram.com/leagueoflegends/" target="_blank">Instagram</a>.
-        </p>
-        <h2>Nossos números de contato</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque voluptatem minima ea facere doloribus incidunt nulla nam mollitia. Quis quo quaerat corrupti temporibus veniam id vel quia? Quam, nesciunt possimus.
-            <br>
-            Contato <em>(14)99387-1654</em> / Whatsapp <em>(14)99647-2123</em>.
-        </p>
+          </h1>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h2>Nosso canal do Youtube</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quisquam velit non molestias beatae incidunt veniam est esse ratione distinctio natus porro reiciendis, numquam sapiente delectus reprehenderit, facere recusandae. Officiis.
+                  <br>
+                  Clique aqui para conhecer canal do <a href="https://www.youtube.com/leagueoflegends" target="_blank">Youtube</a>.
+              </p>
+              <h2>Nossa página do Instagram</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tenetur quod voluptatum sit, perferendis dolorum quis quos odio earum recusandae aliquid, necessitatibus suscipit non ratione dolores sapiente. Numquam, beatae quis.
+                  <br>
+                  Clique aqui para conhecer nossa página do <a href="https://www.instagram.com/leagueoflegends/" target="_blank">Instagram</a>.
+              </p>
+              <h2>Nossos números de contato</h2>
+              <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque voluptatem minima ea facere doloribus incidunt nulla nam mollitia. Quis quo quaerat corrupti temporibus veniam id vel quia? Quam, nesciunt possimus.
+                  <br>
+                  Contato <em>(14)99387-1654</em> / Whatsapp <em>(14)99647-2123</em>.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nome</label>
+                  <input type="text" class="form-control" placeholder="Insira seu nome" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" placeholder="nome@exemplo.com" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Telefone</label>
+                  <input type="text" class="form-control" placeholder="Insira seu telefone" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" placeholder="Insira o assunto da mensagem" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Deixe seu comentário</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-button">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
         <p>Siga nossa página do <a href="https://www.youtube.com/leagueoflegends" target="_blank">Youtube</a> e <a href="https://www.instagram.com/leagueoflegends/" target="_blank">Instagram</a> ou entre em contato pelos numeros: Contato <em>(14)99387-1654</em> / Whatsapp <em>(14)99647-2123</em></p>

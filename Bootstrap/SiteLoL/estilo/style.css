@@ -97,13 +97,9 @@ footer > p > a:hover{
 
 @media (min-width: 768px)
 {
-
-    .carrosel-img{
-        height: 900px!important;
-    }
     
     iframe {
-        height: 60vh;
+        height: 85vh;
     }
 
     .imagem > img {
